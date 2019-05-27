@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_req_image"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/user_req_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/user_req_image"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/user_req_image"
+        android:text="Display Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/user_req_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_req_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/user_req_image"
+        android:text="User default Status" />
+
+    <Button
+        android:id="@+id/acc_req_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_req_status"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/user_req_image"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Accept"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/decline_req_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_req_status"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/acc_req_btn"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Decline"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
